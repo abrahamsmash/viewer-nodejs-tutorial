@@ -23,14 +23,14 @@ var options = {
     getAccessToken: getForgeToken
 }
 
-one.stl
-var documentId = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6c3RlbWZvb3RiYWxsOXZueWRkcWphaWFiYWdzbmx0ZGxydzBmcnFja3B1a3Uvb25lLnN0bA';
+//one.stl
+//var documentId = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6c3RlbWZvb3RiYWxsOXZueWRkcWphaWFiYWdzbmx0ZGxydzBmcnFja3B1a3Uvb25lLnN0bA';
 
 two.stl
 var documentId = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6c3RlbWZvb3RiYWxsOXZueWRkcWphaWFiYWdzbmx0ZGxydzBmcnFja3B1a3UvdHdvLnN0bA';
 
-three.stl
-var documentId = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6c3RlbWZvb3RiYWxsOXZueWRkcWphaWFiYWdzbmx0ZGxydzBmcnFja3B1a3UvdGhyZWUuc3Rs';
+//three.stl
+//var documentId = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6c3RlbWZvb3RiYWxsOXZueWRkcWphaWFiYWdzbmx0ZGxydzBmcnFja3B1a3UvdGhyZWUuc3Rs';
 
 Autodesk.Viewing.Initializer(options, function onInitialized() {
     Autodesk.Viewing.Document.load(documentId, onDocumentLoadSuccess, onDocumentLoadFailure);
