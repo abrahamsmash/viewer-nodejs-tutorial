@@ -23,7 +23,14 @@ var options = {
     getAccessToken: getForgeToken
 }
 
-var documentId = 'urn:YOUR-URN';
+// one.stl
+var documentId = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6c3RlbWZvb3RiYWxsOXZueWRkcWphaWFiYWdzbmx0ZGxydzBmcnFja3B1a3Uvb25lLnN0bA';
+
+// one.stl
+//var documentId = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6c3RlbWZvb3RiYWxsOXZueWRkcWphaWFiYWdzbmx0ZGxydzBmcnFja3B1a3Uvb25lLnN0bA';
+
+// one.stl
+//var documentId = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6c3RlbWZvb3RiYWxsOXZueWRkcWphaWFiYWdzbmx0ZGxydzBmcnFja3B1a3Uvb25lLnN0bA';
 
 Autodesk.Viewing.Initializer(options, function onInitialized() {
     Autodesk.Viewing.Document.load(documentId, onDocumentLoadSuccess, onDocumentLoadFailure);
@@ -57,11 +64,11 @@ function onDocumentLoadSuccess(doc) {
     ///////////////USE ONLY ONE OPTION AT A TIME/////////////////////////
 
     /////////////////////// Headless Viewer /////////////////////////////
-    // viewer = new Autodesk.Viewing.Viewer3D(viewerDiv);
+     viewer = new Autodesk.Viewing.Viewer3D(viewerDiv);
     //////////////////////////////////////////////////////////////////////
 
     //////////////////Viewer with Autodesk Toolbar///////////////////////
-    viewer = new Autodesk.Viewing.Private.GuiViewer3D(viewerDiv);
+   //viewer = new Autodesk.Viewing.Private.GuiViewer3D(viewerDiv);
     //////////////////////////////////////////////////////////////////////
 
     viewer.start(svfUrl, modelOptions, onLoadModelSuccess, onLoadModelError);
